@@ -9,14 +9,9 @@ import { isMessageInstance } from '@sapphire/discord.js-utilities';
   description: 'ping pong',
   detailedDescription: `**Examples:**
     \`${container.botPrefix}ping\`
-    \`${container.botPrefix}pong\``,
-  chatInputCommand: {
-    register: true
-  }
+    \`${container.botPrefix}pong\``
 })
-
 export class PingCommand extends Command {
-
   // Regular command (.ping)
   public async messageRun(message: Message) {
     const { client } = container;
